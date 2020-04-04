@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>GitHub User Search</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/no-result.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/styles/all-users-container.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/styles/detailed-user.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="assets/images/logo.png"
+        alt="GitHub's logo and name"
+      />
+
+      <form class="search-container" id="form">
+        <input
+          type="text"
+          id="search-bar"
+          name="value"
+          placeholder="Search GitHub users..."
+          required
+        />
+        <a>
+          <img id="search-icon" src="assets/images/search-solid.svg" />
+        </a>
+      </form>
+    </header>
+    <h2 id="users-found">Found 258 results for some User</h2>
+    <div class="arrows-container">
+      <img
+        id="arrow-left"
+        src="./assets/images/arrow-left-solid.svg"
+        alt="arrow-left"
+      />
+      <img
+        id="arrow-right"
+        src="./assets/images/arrow-right-solid.svg"
+        alt="arrow-right"
+      />
+    </div>
+    <section class="all-users-container">
+      <div class="simple-user">
+        <div class="top-description">
+          <img src="https://avatars1.githubusercontent.com/u/47342588?v=4" />
+          <div class="user-short-info">
+            <h3>Kate Efimova<span>@kefimochi</span></h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="bottom-description">
+          <h4>Sunnyvale, CA</h4>
+          <h4>Followers: 42</h4>
+        </div>
+      </div>
+    </section>
+    <section class="detailed-user">
+     
+    </section>
+
+    <section class="no-result">
+      <img src="assets/images/github-alt-brands.svg" />
+      Search results will be shown here.
+    </section>
+  </body>
+
+  <script src="assets/scripts/index.js"></script>
+</html>
